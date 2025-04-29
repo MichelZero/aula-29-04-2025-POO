@@ -9,12 +9,17 @@
 # se um determinado elemento está contido em uma tupla. 
 
 tupla = ('a','b',1,2,'c',3,4,'d',5)
-elemento = 'c'
-
-if elemento in tupla:
-    print(f'{elemento} está contido na tupla')
+# elemento = 'c'
+entrada = input("número ou string: ")
+if entrada.isdigit():
+  elemento2 = int(entrada)
 else:
-    print(f'{elemento} não está contido na tupla')
+  elemento2 = entrada
+
+if elemento2 in tupla:
+    print(f'{elemento2} está contido na tupla')
+else:
+    print(f'{elemento2} não está contido na tupla')
 
 
 # Você também pode usar o método count() para 
@@ -23,7 +28,7 @@ else:
 # significa que o elemento está contido na tupla.
 
 tupla = ('a','b',1,2,'c',3,4,'d',5)
-elemento = 'c'
+elemento = '6'
 
 if tupla.count(elemento)>0:
     print(f'{elemento} está contido na tupla')
